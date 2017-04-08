@@ -1,0 +1,23 @@
+/*
+Theme Name: Shapely Child
+Theme URI: https://github.com/vanessametonini/upwit_cities_for_everyone
+Author: Vanessa Me Tonini
+Author URI: https://github.com/vanessametonini
+Template: shapely
+Description: Shapely Child Theme for Fair Shared Cities
+Version: 1.0.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shapely-child
+Tags: left-sidebar, right-sidebar, featured-images, post-formats, threaded-comments, theme-options, photography, portfolio, full-width-template, grid-layout
+*/
+
+.nav-bar .module, .nav-bar .module-group {
+    height: 100px;
+}
+
+.logo {
+    height: 100px;
+    max-height: 100%;
+    width: 400px;
+}
