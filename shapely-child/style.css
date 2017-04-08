@@ -1,15 +1,15 @@
 /*
-Theme Name: Shapely Child
-Theme URI: https://github.com/vanessametonini/upwit_cities_for_everyone
-Author: Vanessa Me Tonini
-Author URI: https://github.com/vanessametonini
-Template: shapely
-Description: Shapely Child Theme for Fair Shared Cities
-Version: 1.0.0
-License: GNU General Public License v3
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: shapely-child
-Tags: left-sidebar, right-sidebar, featured-images, post-formats, threaded-comments, theme-options, photography, portfolio, full-width-template, grid-layout
+	Theme Name: Shapely Child
+	Theme URI: https://github.com/vanessametonini/upwit_cities_for_everyone
+	Author: Vanessa Me Tonini
+	Author URI: https://github.com/vanessametonini
+	Template: shapely
+	Description: Shapely Child Theme for Fair Shared Cities
+	Version: 1.0.0
+	License: GNU General Public License v3
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: shapely-child
+	Tags: left-sidebar, right-sidebar, featured-images, post-formats, threaded-comments, theme-options, photography, portfolio, full-width-template, grid-layout
 */
 
 .nav-bar .module, .nav-bar .module-group {
@@ -20,4 +20,38 @@ Tags: left-sidebar, right-sidebar, featured-images, post-formats, threaded-comme
     height: 100px;
     max-height: 100%;
     width: 400px;
+}
+
+
+/* overriding shapely and bootstrap styles ======== */
+
+p {
+	font-size: 1em;
+}
+
+.top-parallax-section .col-md-offset-2 {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.top-parallax-section .col-md-offset-2 p{
+		text-shadow: 1px 1px 0 black;
+}
+
+.btn.btn-lg {
+	border-radius: 0;
+}
+
+@media (min-width:768px) {
+
+	.top-parallax-section .col-md-offset-2 {
+	    width: 25%;
+	}
+}
+
+
+@media (max-width:768px) {
+
+
 }

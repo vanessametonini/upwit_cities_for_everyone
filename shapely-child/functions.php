@@ -1,22 +1,22 @@
 <?php
-// add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-// function theme_enqueue_styles() {
-//     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
-// }
+function custom_dequeue() {
+    wp_dequeue_style('shapely-scss');
+    wp_deregister_style('shapely-scss');
 
-
-function theme_enqueue_styles() {
-
-    $parent_style = 'parent-style';
-
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style )
-    );
+    wp_dequeue_style('bootstrap');
+    wp_deregister_style('bootstrap');
 }
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
+add_action( 'wp_enqueue_scripts', 'custom_dequeue', 99 );
+add_action( 'wp_head', 'custom_dequeue', 99 );
+
+function shapely_child_enqueue_styles() {
+	wp_enqueue_style( 'bootstrap-child', get_template_directory_uri() . '/inc/css/bootstrap.min.css' );
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+}
+
+ add_action( 'wp_enqueue_scripts', 'shapely_child_enqueue_styles', true );
 
 
 function logo_size_change(){
