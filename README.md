@@ -1,2 +1,4 @@
 # upwit_cities_for_everyone
-UPWIT - Cities for Everyone website's repository
+UPWIT - Cities for Everyone website's repository  
+
+http://www.fairsharedcities.org/
