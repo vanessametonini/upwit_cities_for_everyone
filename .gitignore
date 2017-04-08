@@ -19,8 +19,8 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
-./shapely
-./twentyfifteen
-./twentyseventeen
-./twentysixteen
-./index.php
+shapely
+twentyfifteen
+twentyseventeen
+twentysixteen
+index.php
