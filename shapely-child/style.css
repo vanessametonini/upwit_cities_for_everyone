@@ -12,16 +12,11 @@
 	Tags: left-sidebar, right-sidebar, featured-images, post-formats, threaded-comments, theme-options, photography, portfolio, full-width-template, grid-layout
 */
 
-.nav-bar .module, .nav-bar .module-group {
-    height: 100px;
-}
-
 .logo {
     height: 100px;
     max-height: 100%;
     width: 400px;
 }
-
 
 /* overriding shapely and bootstrap styles ======== */
 
@@ -35,23 +30,107 @@ p {
 	margin-left: auto;
 }
 
-.top-parallax-section .col-md-offset-2 p{
+.top-parallax-section .col-md-offset-2 p {
 		text-shadow: 1px 1px 0 black;
+		padding: 0 10px;
 }
 
 .btn.btn-lg {
 	border-radius: 0;
 }
 
+
+.page-template:not(.home) section.content-area {
+    padding: 3em 0;
+}
+
+.entry-header {
+	display: none;
+}
+
+.header-callout .page-title-section * {
+	height: 100%;
+}
+
+.header-callout .page-title-section .page-title {
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	display: -webkit-flex;
+	display: flex;
+	text-transform: uppercase;
+}
+
+.no-style {
+	list-style: none;
+}
+
+.footer-widget-area .footer-widget {
+    font-size: 32px;
+    line-height: 40px;
+	padding: 6rem 0;
+}
+
+
+.conheca [class^="col-sm-"]  {
+	height: 100%;
+}
+
+
+.conheca p:empty {
+	display: none;
+}
+
 @media (min-width:768px) {
 
 	.top-parallax-section .col-md-offset-2 {
-	    width: 25%;
+	    width: 27%;
 	}
+
+	.top-parallax-section .col-md-offset-2 p {
+		margin-bottom: 50px;
+	}
+
+	.conheca .row {
+		padding: 100px 0;
+	}
+
+	.conheca .row.transpiracao {
+		padding: 50px 0;
+	}
+
+	.conheca [class^="flaticon-"]:before,
+	.conheca [class*=" flaticon-"]:before {
+		font-size: 22em;
+		line-height: .9em;
+	}
+
+	.conheca .flaticon-transpiracao:before {
+		line-height: .8em;
+	}
+
+	.pq-doar .flaticon-doe:before {
+		font-size: 8em;
+	    line-height: 1.2em;
+	}
+
 }
 
 
 @media (max-width:768px) {
 
+	.top-parallax-section .col-md-offset-2 .btn {
+		margin-right: 0;
+	}
+
+	.conheca [class^="flaticon-"]:before,
+	.conheca [class*=" flaticon-"]:before {
+		font-size: 10em;
+		line-height: 1.6em;
+	}
+
+	.conheca p + p,
+	.conheca .btn.btn-lg {
+		margin-bottom: 0;
+	}
 
 }

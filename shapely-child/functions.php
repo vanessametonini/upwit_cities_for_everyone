@@ -14,9 +14,10 @@ add_action( 'wp_head', 'custom_dequeue', 99 );
 function shapely_child_enqueue_styles() {
 	wp_enqueue_style( 'bootstrap-child', get_template_directory_uri() . '/inc/css/bootstrap.min.css' );
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'fscfont', get_stylesheet_directory_uri() . '/flaticon.css' );
 }
 
- add_action( 'wp_enqueue_scripts', 'shapely_child_enqueue_styles', true );
+add_action( 'wp_enqueue_scripts', 'shapely_child_enqueue_styles', true );
 
 
 function logo_size_change(){
