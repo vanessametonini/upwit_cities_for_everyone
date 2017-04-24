@@ -67,7 +67,8 @@ p {
 .footer-widget-area .footer-widget {
     font-size: 32px;
     line-height: 40px;
-	padding: 6rem 0;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
 }
 
 
@@ -84,6 +85,7 @@ p {
 
 	.top-parallax-section .col-md-offset-2 {
 	    width: 27%;
+		min-width: 550px;
 	}
 
 	.top-parallax-section .col-md-offset-2 p {
@@ -92,6 +94,10 @@ p {
 
 	.conheca .row {
 		padding: 100px 0;
+	}
+
+	.conheca div:last-of-type {
+		padding-bottom: 0;
 	}
 
 	.conheca .row.transpiracao {
@@ -108,6 +114,10 @@ p {
 		line-height: .8em;
 	}
 
+	.pq-doar {
+		margin-bottom: 4em;
+	}
+
 	.pq-doar .flaticon-doe:before {
 		font-size: 8em;
 	    line-height: 1.2em;
@@ -118,8 +128,8 @@ p {
 
 @media (max-width:768px) {
 
-	.top-parallax-section .col-md-offset-2 .btn {
-		margin-right: 0;
+	.top-parallax-section .col-md-offset-2 {
+		max-width: 550px;
 	}
 
 	.conheca [class^="flaticon-"]:before,
@@ -133,4 +143,16 @@ p {
 		margin-bottom: 0;
 	}
 
+	.footer-widget-area .footer-widget {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+@media (max-width: 420px) {
+	.top-parallax-section .col-md-offset-2 .btn {
+		margin-right: 0;
+	}
 }

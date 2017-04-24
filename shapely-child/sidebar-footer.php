@@ -20,7 +20,7 @@ if ( ! is_active_sidebar( 'footer-widget-1' ) && ! is_active_sidebar( 'footer-wi
 	<div class="container">
 		<div class="row">
 			<?php if ( is_active_sidebar( 'footer-widget-1' ) ) : ?>
-				<div class="col-xs-12 footer-widget" role="complementary">
+				<div class="col-xs-11 col-sm-12 footer-widget" role="complementary">
 					<?php dynamic_sidebar( 'footer-widget-1' ); ?>
 				</div><!-- .widget-area .first -->
 			<?php endif; ?>
