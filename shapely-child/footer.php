@@ -28,8 +28,7 @@
 					<?php echo wp_kses_post( get_theme_mod( 'shapely_footer_copyright' ) ); ?>
 				</div>
 				<div class="footer-credits">
-					UPWIT 
-					<?php //shapely_footer_info(); ?>
+					<?php shapely_footer_info(); ?>
 				</div>
 			</div><!-- .site-info -->
 			<div class="col-sm-6 text-right">

@@ -24,6 +24,10 @@ p {
 	font-size: 1em;
 }
 
+body.single-jetpack-portfolio .content ul.post-meta li:first-child {
+    display: none;
+}
+
 .top-parallax-section .col-md-offset-2 {
 	float: none;
 	margin-right: auto;
