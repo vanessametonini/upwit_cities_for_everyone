@@ -85,6 +85,11 @@ body.single-jetpack-portfolio .content ul.post-meta li:first-child {
 	display: none;
 }
 
+.portfolio-entry-title {
+	font-size: 30px;
+    line-height: 34px;
+}
+
 @media (min-width:768px) {
 
 	.top-parallax-section .col-md-offset-2 {
@@ -154,6 +159,7 @@ body.single-jetpack-portfolio .content ul.post-meta li:first-child {
 	}
 
 }
+
 
 @media (max-width: 420px) {
 	.top-parallax-section .col-md-offset-2 .btn {
