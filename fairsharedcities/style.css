@@ -1,0 +1,172 @@
+/*
+	Theme Name: Fair Shared Cities
+	Theme URI: https://github.com/vanessametonini/upwit_cities_for_everyone
+	Author: Vanessa Me Tonini
+	Author URI: https://github.com/vanessametonini
+	Template: shapely
+	Description: Shapely Child Theme for Fair Shared Cities
+	Version: 1.0.0
+	License: GNU General Public License v3
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: shapely-child
+	Tags: left-sidebar, right-sidebar, featured-images, post-formats, threaded-comments, theme-options, photography, portfolio, full-width-template, grid-layout
+*/
+
+.logo {
+    height: 100px;
+    max-height: 100%;
+    width: 400px;
+}
+
+/* overriding shapely and bootstrap styles ======== */
+
+p {
+	font-size: 1em;
+}
+
+body.single-jetpack-portfolio .content ul.post-meta li:first-child {
+    display: none;
+}
+
+.top-parallax-section .col-md-offset-2 {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.top-parallax-section .col-md-offset-2 p {
+		text-shadow: 1px 1px 0 black;
+		padding: 0 10px;
+}
+
+.btn.btn-lg {
+	border-radius: 0;
+}
+
+
+.page-template:not(.home) section.content-area {
+    padding: 3em 0;
+}
+
+.jetpack-portfolio-template-default .entry-meta,
+.author-bio,
+.page-template .entry-header,
+.page-template .entry-content .post-title,
+.page-template .entry-content .entry-meta {
+	display: none;
+}
+
+.header-callout .page-title-section * {
+	height: 100%;
+}
+
+.header-callout .page-title-section .page-title {
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	display: -webkit-flex;
+	display: flex;
+	text-transform: uppercase;
+}
+
+.no-style {
+	list-style: none;
+}
+
+.footer-widget-area .footer-widget {
+    font-size: 32px;
+    line-height: 40px;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+
+.conheca [class^="col-sm-"]  {
+	height: 100%;
+}
+
+
+.conheca p:empty {
+	display: none;
+}
+
+.portfolio-entry-title {
+	font-size: 30px;
+    line-height: 34px;
+}
+
+@media (min-width:768px) {
+
+	.top-parallax-section .col-md-offset-2 {
+	    width: 27%;
+		min-width: 550px;
+	}
+
+	.top-parallax-section .col-md-offset-2 p {
+		margin-bottom: 50px;
+	}
+
+	.conheca .row {
+		padding: 100px 0;
+	}
+
+	.conheca div:last-of-type {
+		padding-bottom: 0;
+	}
+
+	.conheca .row.transpiracao {
+		padding: 50px 0;
+	}
+
+	.conheca [class^="flaticon-"]:before,
+	.conheca [class*=" flaticon-"]:before {
+		font-size: 22em;
+		line-height: .9em;
+	}
+
+	.conheca .flaticon-transpiracao:before {
+		line-height: .8em;
+	}
+
+	.pq-doar {
+		margin-bottom: 4em;
+	}
+
+	.pq-doar .flaticon-doe:before {
+		font-size: 8em;
+	    line-height: 1.2em;
+	}
+
+}
+
+
+@media (max-width:768px) {
+
+	.top-parallax-section .col-md-offset-2 {
+		max-width: 550px;
+	}
+
+	.conheca [class^="flaticon-"]:before,
+	.conheca [class*=" flaticon-"]:before {
+		font-size: 10em;
+		line-height: 1.6em;
+	}
+
+	.conheca p + p,
+	.conheca .btn.btn-lg {
+		margin-bottom: 0;
+	}
+
+	.footer-widget-area .footer-widget {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+
+@media (max-width: 420px) {
+	.top-parallax-section .col-md-offset-2 .btn {
+		margin-right: 0;
+	}
+}
