@@ -49,6 +49,7 @@ body.single-jetpack-portfolio .content ul.post-meta li:first-child {
 }
 
 .jetpack-portfolio-template-default .entry-meta,
+.jetpack-portfolio-template-default .post-title,
 .author-bio,
 .page-template .entry-header,
 .page-template .entry-content .post-title,
@@ -94,7 +95,45 @@ body.single-jetpack-portfolio .content ul.post-meta li:first-child {
     line-height: 34px;
 }
 
+section,
+footer {
+    padding: 3em 0;
+}
+
+footer .widget .widget-title  {
+	margin-bottom: 10px;
+}
+
 @media (min-width:768px) {
+
+	.social-icons,
+	.footer-credits {
+		display: -webkit-flex;
+		display: flex;
+		height: 100%;
+		-webkit-justify-content: flex-end;
+		justify-content: flex-end;
+		-webkit-align-items: flex-end;
+		align-items: flex-end;
+	}
+
+	#social.social-icons {
+		-webkit-align-items: center;
+		align-items: center;
+		float: none;
+	}
+
+	.realizacao {
+		height: 110px;
+	}
+
+	.site-info {
+		height: 80px;
+	}
+
+	.col-right {
+		height: 100%;
+	}
 
 	.top-parallax-section .col-md-offset-2 {
 	    width: 27%;

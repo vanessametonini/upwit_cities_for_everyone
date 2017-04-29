@@ -652,9 +652,10 @@ function shapely_top_callout() {
 							} else if ( is_search() ) {
 								_e( 'Search', 'shapely' );
 							} else if ( is_archive() ) {
-								echo ( is_post_type_archive( 'jetpack-portfolio' ) ) ? esc_html__( 'ha Portfolio', 'shapely' ) : get_the_archive_title();
+								echo ( is_post_type_archive( 'jetpack-portfolio' ) ) ? esc_html__( 'Portfolio', 'shapely' ) : get_the_archive_title();
 							} else {
-								echo ( is_singular( 'jetpack-portfolio' ) ) ? esc_html__( 'oi ortfolio', 'shapely' ) : get_the_title();
+								//echo ( is_singular( 'jetpack-portfolio' ) ) ?  esc_html__( 'Portfolio', 'shapely' ) : get_the_title();
+								echo get_the_title();
 							} ?>
 						</h3>
 					</div>

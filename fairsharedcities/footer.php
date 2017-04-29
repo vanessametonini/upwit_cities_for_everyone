@@ -22,17 +22,24 @@
 
 <footer id="colophon" class="site-footer footer bg-dark" role="contentinfo">
 	<div class="container footer-inner">
-		<div class="row">
-			<div class="site-info col-sm-6">
-				<div class="copyright-text">
-					<?php echo wp_kses_post( get_theme_mod( 'shapely_footer_copyright' ) ); ?>
+		<div class="row realizacao">
+			<div class="col-sm-6">
+				<?php if ( is_active_sidebar( 'footer-widget-4' ) ) : ?>
+				<div class="footer-widget" role="complementary">
+					<?php dynamic_sidebar( 'footer-widget-4' ); ?>
 				</div>
-				<div class="footer-credits">
-					<?php shapely_footer_info(); ?>
-				</div>
-			</div><!-- .site-info -->
-			<div class="col-sm-6 text-right">
+				<?php endif; ?>
+			</div>
+			<div class="col-sm-6 col-right">
 				<?php shapely_social_icons(); ?>
+			</div>
+		</div>
+		<div class="row site-info">
+			<div class="copyright-text col-sm-6">
+				<?php echo wp_kses_post( get_theme_mod( 'shapely_footer_copyright' ) ); ?>
+			</div>
+			<div class="footer-credits col-sm-6">
+				<span><?php shapely_footer_info(); ?></span>
 			</div>
 		</div>
 	</div>
