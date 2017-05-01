@@ -28,6 +28,10 @@ body.single-jetpack-portfolio .content ul.post-meta li:first-child {
     display: none;
 }
 
+.shapely_home_portfolio {
+	margin-top: -10px;
+}
+
 .top-parallax-section .col-md-offset-2 {
 	float: none;
 	margin-right: auto;
@@ -35,6 +39,8 @@ body.single-jetpack-portfolio .content ul.post-meta li:first-child {
 }
 
 .top-parallax-section .col-md-offset-2 p {
+		font-size: 1.4em;
+		line-height: 1.4em;
 		text-shadow: 1px 1px 0 black;
 		padding: 0 10px;
 }
@@ -103,6 +109,63 @@ footer {
 footer .widget .widget-title  {
 	margin-bottom: 10px;
 }
+
+/* parceiros */
+.home #main .widget_text {
+	margin-right: auto;
+    margin-left: auto;
+	margin-bottom: 3em;
+	max-width: 1170px;
+}
+
+#main .shapely_home_clients h3,
+.home #main .widget_text .widget-title {
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 34px;
+	text-align: center;
+}
+
+.home #main .widget_text ul {
+	list-style: none;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin: 0;
+	opacity: .7;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.home #main .widget_text ul img {
+	width: 65%;
+	min-width: 140px;
+}
+
+.home #main .widget_text ul a,
+.home #main .widget_text ul img {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#social {
+	float: none;
+}
+
+#social a {
+	font-size: 1.4em;
+}
+
+#social li {
+	padding: 0 .5em;
+}
+
+#social li a[href*="medium.com"] .fa:before {
+    content: "\f23a"
+}
+
 
 @media (min-width:768px) {
 
@@ -175,6 +238,10 @@ footer .widget .widget-title  {
 	    line-height: 1.2em;
 	}
 
+	.home #main .widget_text li {
+		width: 33.3%;
+	}
+
 }
 
 
@@ -201,6 +268,14 @@ footer .widget .widget-title  {
 		margin-right: auto;
 	}
 
+	#social {
+		margin: 1.6em auto;
+	}
+
+	.home #main .widget_text ul li {
+		margin: 1em 0;
+	}
+
 }
 
 
@@ -208,4 +283,5 @@ footer .widget .widget-title  {
 	.top-parallax-section .col-md-offset-2 .btn {
 		margin-right: 0;
 	}
+
 }
